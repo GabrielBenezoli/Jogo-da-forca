@@ -2,7 +2,6 @@
 from palavras import frutas_verduras_legumes
 from palavras import países
 from palavras import cores
-from palavras import aa
 import random
 
 # Estágios de cada fase da forca
@@ -106,6 +105,10 @@ def selecionar_palavras():
 palavra = selecionar_palavras()
 
 # Iniciar o jogo
+# len_palavra = Palavra censurada (sendo formada).
+# letras_uti = Conjunto de letras que já foram utilizadas.
+# palavras_uti = Conjunto de palavras que já foram utilizadas.
+# letras_adi = Conjunto de letras acentudas, que podem estar contidas na palavra.
 def jogar(palavra):
    len_palavra = '_' * len(palavra)
    letras_uti = []
